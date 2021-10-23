@@ -316,7 +316,8 @@ class BaseModel:
         if faces and isinstance(faces[0], dlib.rectangle):
             faces = [_rect_to_css(rect) for rect in faces]
 
-        scale_ = round(1 / self.scale)
+        scale = scale or self.scale
+        scale_ = round(1 / scale)
 
         if image is not None and original_size is not None:
             h, w = image.shape[:2]
@@ -343,6 +344,7 @@ class BaseModel:
 
         Prepares the image before detection"""
         scale = scale or self.scale
+
 
         if self.convert_color is not None:
             image = cv2.cvtColor(image, self.convert_color)
