@@ -17,10 +17,9 @@ def annotate_image(image, faces, box_rgb=(100, 0, 255), keypoints_rgb=(255, 100,
     Returns:
         numpy.Array: Image with annotations
     """
-    # TODO: Adaptive width according to the resolution
 
     img_height, img_width = image.shape[:2]
-    ratio = ((img_height / 1080) + (img_width / 1920) ) / 2
+    ratio = ((img_height / 1080) + (img_width / 1920)) / 2
     width = max(1, round(width * ratio))
 
     for face in faces:
