@@ -21,7 +21,7 @@ class CNNDetector(BaseModel):
         Args:
             convert_color (int, optional): Takes OpenCV COLOR codes to convert the images. 
                 Defaults to cv2.COLOR_BGR2RGB.
-            number_of_times_to_upsample (int, optional): Upsamples the image 
+            number_of_times_to_upsample (int, optional): Up samples the image 
                 number_of_times_to_upsample before running the basic detector. By default is 1.
             confidence (float, optional): Confidence score is used to refrain from making 
                 predictions when it is not above a sufficient threshold. Defaults to 0.5.

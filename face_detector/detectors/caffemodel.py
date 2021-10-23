@@ -28,7 +28,7 @@ class CaffemodelDetector(BaseModel):
                 resize or not. Defaults to False.
             swapRB (bool, optional): Flag which indicates that swap first and last channels 
                 in 3-channel image is necessary. Defaults to False.
-            transpose (bool, optional): Tranpose image. Defaults to False.
+            transpose (bool, optional): Transpose image. Defaults to False.
             convert_color ([type], optional): Takes OpenCV COLOR codes to convert the images. 
                 Defaults to cv2.COLOR_BGR2RGB.
             resize (list[int], optional): Spatial size for output image. Default is (300, 300).
