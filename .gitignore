@@ -126,6 +126,8 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+faced
+faced_detector/models/*
 .pyre/
 models/*
 remove_initializer_from_input.py
@@ -133,3 +135,4 @@ rough.py
 *.DS_Store
 *.vscode
 git_readme_logo.gif
+performance_test.py
