@@ -1,0 +1,3 @@
+include README.md
+include faced/models/face_corrector.pb
+include faced/models/face_yolo.pb

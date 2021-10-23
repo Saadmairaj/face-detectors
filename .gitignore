@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+models/*
+remove_initializer_from_input.py
+rough.py
+*.DS_Store
+*.vscode
+git_readme_logo.gif
