@@ -10,16 +10,16 @@ class HogDetector(BaseModel):
     modular out of the box.
     """
 
-    Name = "Hog Detector"
+    NAME = "Hog Detector"
 
-    def __init__(self, convert_color=None, number_of_times_to_upsample=1, confidence=0.5, **kw):
+    def __init__(self, convert_color=None, number_of_times_to_upsample=2, confidence=0.5, **kw):
         """Hog detector constructor. 
 
         Args:
             convert_color (int, optional): Takes OpenCV COLOR codes to convert the images. 
                 Defaults to cv2.COLOR_BGR2RGB.
             number_of_times_to_upsample (int, optional): Upsamples the image 
-                number_of_times_to_upsample before running the basic detector. By default is 1.
+                number_of_times_to_upsample before running the basic detector. By default is 2.
             confidence (float, optional): Confidence score is used to refrain from making 
                 predictions when it is not above a sufficient threshold. Defaults to 0.5.
             scale (float, optional): Scales the image for faster output (No need to set 
@@ -59,7 +59,6 @@ class HogDetector(BaseModel):
                 scale = 1
         else:
             scale = self.scale
-
         image = self._prep_image(image, scale=scale)
         face_rects, scores, _ = self.detector.run(
             image, self.number_of_times_to_upsample, -0.35)
