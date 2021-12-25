@@ -8,7 +8,7 @@ def get_long_description(path):
 
 
 attrs = dict(
-    name='face-detector',
+    name='face-detectors',
     version="0.1.0",
     packages=find_packages(exclude=('test',)),
     long_description=get_long_description('README.md'),
@@ -16,7 +16,7 @@ attrs = dict(
     long_description_content_type='text/markdown',
     author="Saad Mairaj",
     author_email='Saadmairaj@yahoo.in',
-    url='https://github.com/Saadmairaj/face-detector',
+    url='https://github.com/Saadmairaj/face-detectors',
     license='Apache',
     python_requires='>=3.6',
     setup_requires=[
@@ -47,9 +47,9 @@ attrs = dict(
         'License :: OSI Approved :: Apache Software License',
     ],
     project_urls={
-        'Bug Reports': 'https://github.com/Saadmairaj/face-detector/issues',
-        'Source': 'https://github.com/Saadmairaj/face-detector',
-        'Documentation': 'https://github.com/Saadmairaj/face-detector#documentation',
+        'Bug Reports': 'https://github.com/Saadmairaj/face-detectors/issues',
+        'Source': 'https://github.com/Saadmairaj/face-detectors',
+        'Documentation': 'https://github.com/Saadmairaj/face-detectors#documentation',
     },
     keywords=[
         'machine learning',
