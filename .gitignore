@@ -136,3 +136,4 @@ rough.py
 *.vscode
 git_readme_logo.gif
 performance_test.py
+requirements.txt
