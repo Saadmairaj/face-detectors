@@ -12,7 +12,7 @@ attrs = dict(
     version="0.1.0",
     packages=find_packages(exclude=('test',)),
     long_description=get_long_description('README.md'),
-    description='Light weight face detector hight level client with multiple detection techniques.',
+    description='Light weight face detector high-level client with multiple detection techniques.',
     long_description_content_type='text/markdown',
     author="Saad Mairaj",
     author_email='Saadmairaj@yahoo.in',
