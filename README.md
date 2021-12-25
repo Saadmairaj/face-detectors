@@ -31,6 +31,33 @@ This repo contains various types of face detection techniques. All the face dete
 
 _( More on the way...)_
 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [face-detectors](https://pypi.org/project/face-detectors/) with the following command:
+
+```bash
+pip install face-detectors
+```
+
+If you would like to get the latest master or branch from github, you could also:
+
+```bash
+pip install git+https://github.com/Saadmairaj/face-detectors
+```
+
+Or even select a specific revision _(branch/tag/commit)_:
+
+```bash
+pip install git+https://github.com/Saadmairaj/face-detectors@master
+```
+
+Similarly, for tag specify [tag](https://github.com/Saadmairaj/face-detectors/tags) with `@v0.x.x`. For example to download tag v0.1.0 from Git use:
+
+```bash
+pip install git+https://github.com/Saadmairaj/face-detectors@v0.1.0
+```
+
 ## Quick usage
 
 Like said setup and usage is very simple and easy.
