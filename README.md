@@ -1,4 +1,9 @@
-# Face Detector
+# Face Detectors
+
+[![PyPI](https://img.shields.io/pypi/v/face-detectors)](https://pypi.org/project/face-detectors)
+[![Downloads](https://pepy.tech/badge/face-detectors)](https://pepy.tech/project/face-detectors)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Saadmairaj/face-detectors.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Saadmairaj/face-detectors/context:python)
+[![CodeFactor](https://www.codefactor.io/repository/github/saadmairaj/face-detectors/badge)](https://www.codefactor.io/repository/github/saadmairaj/face-detectors)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46227224/138546601-0c9c1f61-6a91-4376-a599-e0bf2cd73797.gif" />
@@ -37,8 +42,8 @@ Like said setup and usage is very simple and easy.
 **_Example_**
 
 ```python
-from face_detector import Ultralight320Detector
-from face_detector.utils import annotate_image
+from face_detectors import Ultralight320Detector
+from face_detectors.utils import annotate_image
 
 detector = Ultralight320Detector()
 
@@ -75,11 +80,11 @@ The below is IMAGE 2 result
   <img src="https://user-images.githubusercontent.com/46227224/138553429-681cb9c6-218e-4e84-a852-92374da7c8fa.jpg" width=400/>
 </p>
 
-[View complete comparison](https://github.com/Saadmairaj/face-detector/tree/main/sample)
+[View complete comparison](https://github.com/Saadmairaj/face-detectors/tree/main/sample)
 
 ## Documentation
 
-Briefly describing face-detector package that are all the detectors and utility functions.
+Briefly describing face-detectors package that are all the detectors and utility functions.
 
 ### CaffeModel Detector
 
@@ -87,8 +92,8 @@ Caffemodel is very light weight model that uses less resources to perform detect
 
 ```python
 import cv2
-from face_detector import CaffemodelDetector
-from face_detector.utils import annotate_image
+from face_detectors import CaffemodelDetector
+from face_detectors.utils import annotate_image
 
 vid = cv2.VideoCapture(0)
 detector = CaffemodelDetector()
@@ -149,8 +154,8 @@ CNN (Convolutional Neural Network) might not be a light weight model but it is g
 
 ```python
 import cv2
-from face_detector import CNNDetector
-from face_detector.utils import annotate_image
+from face_detectors import CNNDetector
+from face_detectors.utils import annotate_image
 
 vid = cv2.VideoCapture(0)
 detector = CNNDetector()
@@ -206,8 +211,8 @@ If you want to detect faster with `HogDetector` and don't care about number of d
 
 ```python
 import cv2
-from face_detector import HogDetector
-from face_detector.utils import annotate_image
+from face_detectors import HogDetector
+from face_detectors.utils import annotate_image
 
 vid = cv2.VideoCapture(0)
 detector = HogDetector()
@@ -261,8 +266,8 @@ Ultra Light detection model is what the name says, it a very light weight, accur
 
 ```python
 import cv2
-from face_detector import Ultralight320Detector
-from face_detector.utils import annotate_image
+from face_detectors import Ultralight320Detector
+from face_detectors.utils import annotate_image
 
 vid = cv2.VideoCapture(0)
 detector = Ultralight320Detector()
@@ -319,8 +324,8 @@ This detector will be more accurate than 320 sized ultra light model (`Ultraligh
 
 ```python
 import cv2
-from face_detector import Ultralight640Detector
-from face_detector.utils import annotate_image
+from face_detectors import Ultralight640Detector
+from face_detectors.utils import annotate_image
 
 vid = cv2.VideoCapture(0)
 detector = Ultralight640Detector()
@@ -385,4 +390,4 @@ Syntax: `annotate_image(**options)`
 | `keypoints_rgb` | RGB color for keypoints to be of. Defaults to (150, 0, 255).                 |
 | `width`         | Width of annotations. Defaults to 2                                          |
 
-## [License](https://github.com/Saadmairaj/face-detector/blob/main/LICENSE)
+## [License](https://github.com/Saadmairaj/face-detectors/blob/main/LICENSE)
